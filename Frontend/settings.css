@@ -1,0 +1,510 @@
+/* Settings-related CSS styles */
+
+/* Dark Theme */
+.dark-theme {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    color: #ffffff !important;
+}
+
+.dark-theme .modal-content {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%) !important;
+    color: #ffffff !important;
+}
+
+.dark-theme .form-control,
+.dark-theme .form-select {
+    background-color: #3d3d3d !important;
+    border-color: #555555 !important;
+    color: #ffffff !important;
+}
+
+.dark-theme .form-control:focus,
+.dark-theme .form-select:focus {
+    background-color: #4d4d4d !important;
+    border-color: #00AAFF !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 170, 255, 0.25) !important;
+}
+
+/* Light Theme */
+.light-theme {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    color: #212529 !important;
+}
+
+.light-theme .modal-content {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+    color: #212529 !important;
+}
+
+.light-theme .text-light,
+.light-theme .text-white {
+    color: #212529 !important;
+}
+
+.light-theme .form-control,
+.light-theme .form-select {
+    background-color: #ffffff !important;
+    border-color: #ced4da !important;
+    color: #212529 !important;
+}
+
+.light-theme .glow-on-hover {
+    background: #ffffff !important;
+    color: #212529 !important;
+    border: 2px solid #00AAFF !important;
+}
+
+.light-theme .glow-on-hover:hover {
+    background: #00AAFF !important;
+    color: #ffffff !important;
+}
+
+/* No Animations */
+.no-animations * {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+}
+
+.no-animations .textillate {
+    animation: none !important;
+}
+
+/* Settings Modal Enhancements */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-range::-webkit-slider-thumb {
+    background: #00AAFF;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form-range::-moz-range-thumb {
+    background: #00AAFF;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #00AAFF;
+    border-color: #00AAFF;
+}
+
+.form-check-input:focus {
+    border-color: #00AAFF;
+    box-shadow: 0 0 0 0.2rem rgba(0, 170, 255, 0.25);
+}
+
+/* Notification Styles */
+.alert {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #17a2b8 0%, #00AAFF 100%);
+    color: white;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+    color: white;
+}
+
+/* Settings Button Glow Effect */
+#SettingsBtn:hover {
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.6);
+    transform: scale(1.05);
+}
+
+/* Modal Animation */
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Custom Scrollbar for Settings Modal */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #00AAFF;
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #0088cc;
+}
+
+/* Settings Section Headers */
+.modal-body h6 {
+    border-bottom: 2px solid rgba(0, 170, 255, 0.3);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Form Control Hover Effects */
+.form-control:hover,
+.form-select:hover {
+    border-color: #00AAFF;
+    transition: border-color 0.3s ease;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* Range Input Styling */
+.form-range {
+    height: 6px;
+}
+
+.form-range::-webkit-slider-track {
+    background: rgba(0, 170, 255, 0.3);
+    border-radius: 3px;
+}
+
+.form-range::-moz-range-track {
+    background: rgba(0, 170, 255, 0.3);
+    border-radius: 3px;
+}
+
+/* ========================================
+   WELCOME ANIMATION STYLES
+   ======================================== */
+
+/* Welcome Container */
+.welcome-container {
+    padding: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* AI Icon Animation */
+.ai-icon-container {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.ai-icon {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.ai-core {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00AAFF 0%, #0088cc 100%);
+    box-shadow: 0 0 30px rgba(0, 170, 255, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Rings */
+.pulse-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(0, 170, 255, 0.6);
+    border-radius: 50%;
+    animation: ringPulse 2s ease-out infinite;
+}
+
+.pulse-ring.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.pulse-ring.delay-2 {
+    animation-delay: 1s;
+}
+
+/* Welcome Text */
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #00AAFF 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+.welcome-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Feature Icons */
+.feature-icons {
+    animation: slideInUp 1s ease-out 0.5s both;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 170, 255, 0.2) 0%, rgba(0, 170, 255, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #00AAFF;
+    transition: all 0.3s ease;
+    animation: bounceIn 1s ease-out;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, rgba(0, 170, 255, 0.4) 0%, rgba(0, 170, 255, 0.2) 100%);
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.3);
+}
+
+.feature-icon:nth-child(1) { animation-delay: 0.1s; }
+.feature-icon:nth-child(2) { animation-delay: 0.2s; }
+.feature-icon:nth-child(3) { animation-delay: 0.3s; }
+.feature-icon:nth-child(4) { animation-delay: 0.4s; }
+
+/* Loading Dots */
+.loading-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.loading-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #00AAFF;
+    animation: dotPulse 1.5s ease-in-out infinite;
+}
+
+.loading-dots .dot:nth-child(1) { animation-delay: 0s; }
+.loading-dots .dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots .dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* ========================================
+   SUCCESS ANIMATION STYLES
+   ======================================== */
+
+/* Success Container */
+.success-container {
+    padding: 2rem;
+    animation: zoomIn 0.8s ease-out;
+}
+
+/* Success Icon */
+.success-icon {
+    display: inline-block;
+    animation: bounceIn 1s ease-out;
+}
+
+.checkmark-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.5);
+    animation: checkmarkPulse 2s ease-in-out infinite;
+    position: relative;
+}
+
+.checkmark {
+    width: 30px;
+    height: 15px;
+    border: 3px solid white;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    animation: checkmarkDraw 0.8s ease-out 0.3s both;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+/* Success Text */
+.success-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #28a745;
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.success-subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+    animation: fadeIn 1s ease-out 0.7s both;
+}
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px rgba(0, 170, 255, 0.5); }
+    100% { text-shadow: 0 0 20px rgba(0, 170, 255, 0.8); }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes dotPulse {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes checkmarkDraw {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 15px;
+        height: 0;
+    }
+    100% {
+        width: 30px;
+        height: 15px;
+    }
+}
+
+@keyframes checkmarkPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(40, 167, 69, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(40, 167, 69, 0.8);
+    }
+}
+
+@keyframes ringPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
