@@ -49,6 +49,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+# Config files with API keys
+Backend/config.py
+cookie.json
+
 # Translations
 *.mo
 *.pot
